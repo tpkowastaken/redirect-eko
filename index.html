@@ -5,10 +5,10 @@
 <head>
 	<script>
         // Get the full path and query string of the current URL
-        const currentUrl = window.location.pathname + window.location.search + window.location.hash;
+        const currentUrl = '';
         // Redirect to the new URL, preserving path and query parameters
         window.location.replace("{{ site.redirect_url }}" + currentUrl);
     </script>
-    <meta http-equiv="refresh" content="1; url={{ site.redirect_url }}{{ currentUrl }}" />
+    <meta http-equiv="refresh" content="1; url={{ site.redirect_url }}" />
 </head>
 </html>
